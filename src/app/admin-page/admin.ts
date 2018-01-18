@@ -9,14 +9,14 @@ import { VoteService } from '../vote.service';
 })
 export class adminComponent
 {
-	adminInfo : any[] = [];
+	adminInfo  = [];
 	isValid : boolean;
  	constructor(private router: Router, private newService : VoteService){}
 	adminData = {};
 
 	ngOnInit()
 	{
-		this.newService.getData().subscribe(lists => {
+		this.newService.getVoterData().subscribe(lists => {
       this.adminInfo = lists;
       	console.log(this.adminInfo.length);
        });

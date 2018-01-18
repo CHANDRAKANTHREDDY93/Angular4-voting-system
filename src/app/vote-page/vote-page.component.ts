@@ -3,7 +3,7 @@ import { RouterModule, Router} from '@angular/router';
 import { Http, Headers } from '@angular/http';
 import { VoteService } from '../vote.service';
 import { Task } from '../../task';
-
+import { Ivote } from './votepageInterface';
 @Component({
   selector: 'app-vote-page',
   templateUrl: './vote-page.component.html',
@@ -15,14 +15,14 @@ export class VotePageComponent implements OnInit
   ngOnInit () : void
   {}
     tasks : Task[];
-    votes : String;
-    myVote : String;
-    toVote : String;
+    votes : string;
+    myVote : string;
+    toVote : string;
     info;  
-    newData : any = [];
+    newData = [];
     hideButton : boolean = false;
-    data : any[] =[];
-    valid : any = [];
+    data  =[];
+    valid  = [];
     isValid : boolean;
     isDone : boolean;
       showButton() : void
@@ -74,7 +74,7 @@ export class VotePageComponent implements OnInit
                 }
                 else
                 {
-                    console.log("invalid");
+                    alert("Sorry you have already casted your vote. Please logout for security reasons");
                 }
                 });
               }  

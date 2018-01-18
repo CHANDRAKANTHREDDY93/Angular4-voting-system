@@ -10,14 +10,14 @@ export class adminPageComponent implements OnInit
 {
   ngOnInit() : void
   {}
-	voterInfo : any = [];
-	votesCasted : any = [];
-	votesLeft : any = [];
+	voterInfo  = [];
+	votesCasted  = [];
+	votesLeft  = [];
 	repVote;
   demoVote;
 	repVotesCasted;
   demoVotesCasted;
-	myVote : any = [];
+	myVote  = [];
   winner: String;
 	valid :boolean;
 		constructor(private newService : VoteService, private router : Router)
