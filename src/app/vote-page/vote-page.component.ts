@@ -19,10 +19,10 @@ export class VotePageComponent implements OnInit
     myVote : string;
     toVote : string;
     info;  
-    newData = [];
+    newData: any[];
     hideButton : boolean = false;
-    data  =[];
-    valid  = [];
+    data : any = [{vote : '', ssn: ''}];
+    valid : any[];
     isValid : boolean;
     isDone : boolean;
       showButton() : void

@@ -11,7 +11,7 @@ import { IsignUp } from './signupInterface';
 
 export class signUpComponent
 {
-	voterData = [];
+	voterData : any = [{voteId : '', ssn : '', name : '', phone : '', email : '', address : '', age : ''}];
 	voters : voterList[];
 	voteId : string;
 	ssn : number;
@@ -40,7 +40,10 @@ export class signUpComponent
 		{
 			console.log(this.voters);
 		});
-
+	}
+	close()
+	{
+		this.router.navigateByUrl('/home-page/home-page');
 	}
 	
 }

@@ -11,9 +11,9 @@ import { Ihomepage } from './homePageInterface';
 })
 export class homePageComponent implements OnInit 
 {	
-  voterInfo= [];
-  voterData : Ihomepage[];
-  data = [];
+  voterInfo : any[];
+  voterData : any[];
+  data : any =[{vId : '', ssn : '', age : ''}];;
   isValid : boolean = false;
 
   constructor(public router: Router, public newService: VoteService)

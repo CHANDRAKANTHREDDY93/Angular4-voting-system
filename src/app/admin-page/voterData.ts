@@ -9,7 +9,7 @@ import {Ng2PaginationModule} from 'ng2-pagination';
 })
 export class voterData
 {
-	info = [];
+	info : any[];
 	constructor(private newService: VoteService)
 	{
 		this.newService.getVoterData().subscribe(lists =>
