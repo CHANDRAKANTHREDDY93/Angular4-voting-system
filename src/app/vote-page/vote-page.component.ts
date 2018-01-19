@@ -59,6 +59,10 @@ export class VotePageComponent implements OnInit
         a.length ===0?this.postData():alert("Sorry! You have already casted your vote!! Please check out for security reasons");
                 }  
         }
+        close()
+        {
+            this.router.navigateByUrl('home-page/home-page');
+        }
 }
 
 
