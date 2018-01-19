@@ -34,8 +34,9 @@ export class signUpComponent
 		this.phone = phone;
 		this.email = email;
 		this.address = address;
+		this.age = age;
 		this.voters = this.voterData;
-		let reqObj = { voteId : this.voteId, ssn : this.ssn, name : this.name, phone : this.phone, email : this.email, address : this.address};
+		let reqObj = { voteId : this.voteId, ssn : this.ssn, name : this.name, age :this.age, phone : this.phone, email : this.email, address : this.address};
 		this.newService.postVoterData(reqObj).subscribe(votersList =>
 		{
 			console.log(this.voters);

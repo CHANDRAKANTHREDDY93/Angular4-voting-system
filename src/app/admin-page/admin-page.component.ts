@@ -10,8 +10,8 @@ export class adminPageComponent implements OnInit
 {
   ngOnInit() : void
   {}
-	voterInfo : any[];
-	votesCasted : any[];
+	voterInfo : any[] =[];
+	votesCasted : any[] = [];
 	votesLeft :any[];
 	repVote;
   demoVote;
